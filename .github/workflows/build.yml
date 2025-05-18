@@ -19,6 +19,9 @@ jobs:
         run: |
           npm ci
           npm run build
+      - name: List _site contents
+        run: ls -la _site
+
           
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

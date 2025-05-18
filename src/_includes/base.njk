@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bureau89 Formations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href={{ site.baseURL }}images/B89_Blanc.png>
+    <link rel="stylesheet" href="{{ site.baseURL }}css/style.css">
+    {% if tag != "plan" %}
+    <link rel="stylesheet" href="{{ site.baseURL }}css/docsstyle.css">
+    {% endif %}
+    {% if tag == "contact" %}
+    <link rel="stylesheet" href="{{ site.baseURL }}css/contact.css">
+    {% endif %}
+
+</head>
+<body class="container min-vh-100 d-flex flex-column">
+{% include "partials/navbar.njk" %}
+
+    {% block content %}
+        {{ content | safe }}
+    {% endblock %}
+
+{% include "partials/footer.njk" %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/start.js"></script>
+</body>
+</html>

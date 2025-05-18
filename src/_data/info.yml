@@ -1,0 +1,44 @@
+- titre : Office 365/Microsoft 365
+  id : _1
+  target : O0
+  liens :
+    - arefs:
+        ref: docs/formation-info/mvp/mvp/
+        titre: Microsoft 365, notions fondamentales (Microsoft MS MS-900)
+    - arefs:
+        ref: docs/formation-info/mgh/mgh/
+        titre: Microsoft 365 - Gestion des identités et des services (Microsoft MS-100)
+
+
+- titre : Windows Server
+  id : _2
+  target : w0
+  liens :
+    - arefs:
+        ref: docs/formation-info/windows_server/active-directory-windows-server-2022/
+        titre: Active Directory sous Windows Server 2022
+    - arefs:
+        ref: docs/formation-info/windows_server/windows_2022/
+        titre: Windows Server 2022 - Mise en œuvre et administration
+    - arefs:
+        ref: docs/formation-info/windows_server/haute_disponibilite/
+        titre: Windows 2022, mise en œuvre de la haute disponibilité (Cluster)
+
+
+- titre : Powershell et client windows
+  id : _3
+  target : p0
+  liens :
+    - arefs:
+        ref: docs/formation-info/powershell/powerShell_automatisation/
+        titre: PowerShell, gérer l'automatisation de Windows
+
+- titre: Réseau
+  id: _4
+  target: r0
+  liens:
+    - arefs:
+        ref: docs/formation-info/reseau/cni/
+        titre: Introduction aux réseaux
+
+

@@ -1,0 +1,66 @@
+---
+layout: formation.njk
+title: Formation Word Avancé
+tag: plan
+description: "Cette formation vous permettra de maîtriser les fonctionnalités avancées de Microsoft Word pour une utilisation professionnelle efficace."
+objectifs: "A l'issue de la formation, vous serez capable d'utiliser les fonctionnalités de bases de Word."
+prerequis: "Il est nécessaire d'être initié à l'utilisation d'un ordinateur et de pratiquer régulièrement l'environnement Windows."
+methode: "Des cas de figures types les plus proches possibles de l'activité des stagiaires."
+duree: "2 jours"
+tarif: "600 € H.T."
+sections:
+  - titre: "Automatiser la présentation des documents avec les styles, thèmes et modèles"
+    sousPoints:
+      - "Application d'un thème"
+      - "Style de liste"
+      - "Création d'un style"
+      - "La fenêtre styles"
+      - "Modification d'un style"
+      - "Style normal pour un paragraphe"
+      - "Suppression d'un style"
+      - "Le jeu des styles"
+      - "Affichage des styles et formats appliqués"
+      - "Création d'un modèle"
+  - titre: "Gérer une mise en page complexe par sections"
+    sousPoints:
+      - "Déplacement dans un long document"
+      - "Insérer des sauts de page"
+      - "Insérer des sauts de section"
+      - "En-têtes ou pieds de page différenciés"
+      - "Mise en page dynamique*"
+  - titre: "Conception de longs documents avec le mode plan"
+    sousPoints:
+      - "Insérer un autre document Word par copier / coller"
+      - "Niveaux hiérarchiques des titres"
+      - "Plan du document"
+      - "Insérer une table des matières"
+      - "Document maître"
+  - titre: "Créer des tableaux"
+    sousPoints:
+      - "Création d'un tableau"
+      - "Déplacement et saisie dans un tableau"
+      - "Sélection et insertion de lignes et de colonnes"
+      - "Suppression de lignes et de colonnes"
+      - "Styles de tableau"
+      - "Mise en forme des cellules"
+      - "Hauteur des lignes et largeur des colonnes"
+      - "Alignement des cellules et d'un tableau"
+      - "Fusion et fractionnement de cellules ou d'un tableau"
+      - "Conversion texte, tableau"
+      - "Tri d'un tableau, d'une liste ou de paragraphes"
+      - "Calculs dans un tableau"
+  - titre: "Diffuser un mailing"
+    sousPoints:
+      - "Mailing : associer une liste à un document"
+      - "Insertion de champs dans un mailing"
+      - "Exécution d'un mailing"
+      - "Modification des destinataires"
+      - "Ajout et suppression de destinataires"
+      - "Tri d'une liste de destinataires"
+      - "Sélection des enregistrements à imprimer"
+      - "Texte conditionnel dans un mailing"
+      - "Préparation d'étiquettes pour un mailing"
+      - "Document à zones variables"
+      - "Fusion et publipostage au format Adobe PDF"
+---
+

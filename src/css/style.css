@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'bancoregular';
+    src: url('font/banco-webfont.eot');
+    src: url('font/banco-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/banco-webfont.woff2') format('woff2'),
+    url('font/banco-webfont.woff') format('woff'),
+    url('font/banco-webfont.ttf') format('truetype'),
+    url('font/banco-webfont.svg#bancoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --primary-color: #098289; /* Couleur principale */
+    --primary-hover: #076b6f; /* Variante plus foncée pour le hover */
+    --text-color: #098289; /* Couleur du texte */
+    --white: #ffffff; /* Blanc */
+    --white-card:#f5f5f5;
+    --h-color:  #FFD700; /* Jaune */
+    --fond-card: #666;
+    --black:#000;
+    --linkd: #0A66C2; /* BLEU LINKDIN */
+}
+
+.titre{
+    font-family: bancoregular,sans-serif;
+    font-size: 30px;
+    color: var(--white);
+}
+header{
+    background-color: var(--primary-color);
+}
+.nav-main {
+    border-bottom: 4px solid var(--h-color);
+}
+
+.nav-item {
+    position: relative;
+    padding: 15px 20px;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar-brand.titre:hover {
+    color: var(--primary-color); /* Change la couleur au survol */
+}
+
+/* Modifications pour le menu déroulant pleine largeur */
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+.sub-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sub-menu li {
+    padding: 8px 0;
+}
+
+.sub-menu a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu a::before {
+    content: "→";
+    margin-right: 10px;
+    color: var(--h-color);
+}
+
+.right-box {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Conteneur pour centrer le contenu du dropdown */
+.mega-menu-container {
+    max-width: 1200px;
+   /* margin: 0 auto;*/
+    padding: 0 15px;
+}
+/* Styles du carrousel adapté */
+.solutions-carousel {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-title {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    width: calc(33.333% - 30px);
+    margin-right: 15px;
+    flex: 0 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.carousel-card {
+    background: var(--white-card);
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.carousel-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel-card p {
+    color: var(--fond-card);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: var(--h-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 100;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Ajoute une ombre pour améliorer la visibilité */
+}
+
+.carousel-control-prev {
+    left: -25px;
+    transform: translateX(50%);
+}
+
+.carousel-control-next {
+    right: -25px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.carousel-indicators .active {
+    background-color: var(--primary-color);
+}
+
+.row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Style pour les liens des formations sans modifier la présentation */
+.formation-link {
+    color: inherit; /* Hérite la couleur du texte parent */
+    text-decoration: none; /* Supprime le soulignement */
+    display: block; /* Permet au lien de prendre toute la surface de la carte */
+}
+
+.formation-link:hover {
+    color: inherit; /* Conserve la couleur au survol */
+    text-decoration: none; /* Pas de soulignement au survol */
+}
+
+/* Effet subtle au survol pour indiquer que c'est cliquable */
+.carousel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* S'assurer que le survol n'affecte pas la lisibilité */
+.carousel-card {
+    transition: all 0.3s ease;
+    height: 100%;
+    cursor: pointer; /* Indique que la carte est cliquable */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .carousel-slide {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        width: calc(100% - 30px);
+    }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+
+    .carousel-control-next {
+        right: 10px;
+    }
+}
+.fleche-icon{
+    color: var(--h-color);
+    margin-right: 10px;
+}
+.grandtitre {
+    color:  var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.link {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.link:hover {
+    color: var(--primary-color);
+    text-decoration: none; /* Supprime le soulignement au survol */
+    font-weight: bold; /* Optionnel: ajoute du gras au lieu du soulignement */
+}
+.btn-outline-success a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: var(--bs-success); /* Utilise la couleur success de Bootstrap */
+}
+
+.btn-outline-success a:hover {
+    color: var(--white); /* Assure que la couleur reste identique au survol */
+}
+
+
+/* pied */
+footer {
+    background-color: var(--primary-color) !important;
+}
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* formation */
+.txt{
+    color: var(--primary-color);
+}
+.hr{
+    color: var(--h-color);
+}
+.accordion-button {
+    color: var(--primary-color); /* Applique la couleur au texte */
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color); /* Garde la couleur même quand la section est ouverte */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Supprime l'effet de focus */
+    border-color: var(--primary-color); /* Facultatif : Bordure colorée au focus */
+}
+.border-card{
+    /*--bs-border-opacity: 1;*/
+    border-color: var(--h-color);
+}

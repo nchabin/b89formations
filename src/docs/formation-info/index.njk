@@ -1,0 +1,46 @@
+---
+layout: "base.njk"
+authors: chchabin
+description: Formations pour les informaticiens
+title: Formations pour les informaticiens
+tag: plan
+---
+<div class="container-fluid min-vh-100">
+
+    <h1 class="display-4 txt">Formations pour les informaticiens</h1>
+    <hr class="my-4 hr">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="accordion accordion-flush" id="titre">
+                {% for group in info %}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="{{ group.id }}">
+                            <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#{{ group.target }}"
+                                    aria-expanded="false" aria-controls="{{ group.target }}">
+                                {{ group.titre }}
+                            </button>
+                        </h2>
+                        <div id="{{ group.target }}" class="collapse accordion-collapse"
+                             aria-labelledby="{{ group.id }}" data-bs-parent="#titre">
+                            <div class="accordion-body">
+                                <div class="list-group list-group-flush">
+                                    {% for lien in group.liens %}
+                                        <a class="list-group-item list-group-item-action"
+                                                {% if not (lien.arefs.ref.startsWith('http://') or lien.arefs.ref.startsWith('https://')) %}
+                                                    href="{{ site.baseURL }}{{ lien.arefs.ref }}"
+                                                {% else %}
+                                                    href="{{ lien.arefs.ref }}"
+                                                {% endif %}
+                                           target="_blank">{{ lien.arefs.titre }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

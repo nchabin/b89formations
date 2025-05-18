@@ -1,0 +1,37 @@
+# Dépendances
+/node_modules
+/npm-debug.log
+/yarn-error.log
+/yarn-debug.log
+/package-lock.json
+/yarn.lock
+
+# Dossiers de sortie Eleventy
+/public/
+/dist/
+
+# Fichiers de cache
+/.cache/
+/.eleventy.cache/
+/.netlify/
+
+# Fichiers d'environnement
+/.env
+/.env.*
+!/.env.example
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeurs
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Autres fichiers temporaires
+/tmp/
+*.log

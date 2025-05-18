@@ -1,0 +1,37 @@
+- titre : Informatique d'entreprise
+  id : _1
+  target : c0
+  liens :
+    - arefs :
+        ref : docs/formation-u-m/introduction/cni
+        titre : Comprendre l'informatique en entreprise
+
+- titre : Formation Excel
+  id : _2
+  target : e0
+  liens :
+    - arefs:
+        ref: docs/formation-u-m/formation_Excel/excel-debutant/
+        titre: Excel Initiation
+    - arefs:
+        ref: docs/formation-u-m/formation_Excel/excel-avance/
+        titre: Excel Avancé
+
+- titre : Formation Word
+  id : _3
+  target : w0
+  liens :
+    - arefs:
+        ref: docs/formation-u-m/formation_Word/word-debutant/
+        titre: Word Initiation
+    - arefs:
+        ref: docs/formation-u-m/formation_Word/word-avance/
+        titre: Word Avancé
+
+- titre : Formation Powerpoint
+  id : _4
+  target : p0
+  liens :
+    - arefs:
+        ref: docs/formation-u-m/formation_Powerpoint/powerpoint-debutant
+        titre: PowerPoint Initiation

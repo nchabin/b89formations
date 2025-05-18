@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+}
+h2 {
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 35px;
+    position: relative;
+}
+h2:after {
+    content: '';
+    display: block;
+    width: 230px;
+    height: 4px;
+    background-color: #F7C946;
+    position: absolute;
+    left: calc(50% - 115px);
+    margin-top: 15px;
+}
+.text-teal {
+    color: #098289;
+}
+ul li::marker {
+    color: #0094AB;
+}
+
+/* */

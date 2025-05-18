@@ -1,0 +1,47 @@
+---
+layout: "docs.njk"
+authors: chchabin
+description: "A propos"
+title: "A propos"
+group: "financement"
+toc: true
+date: "2023-12-25T22:49:46+01:00"
+draft: false
+tag: contact
+---
+
+   <!--Visitez Formspree, créer son fomulaire et placé le liens dans action si dessous-->
+      <form name="myForm" action=" " onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+

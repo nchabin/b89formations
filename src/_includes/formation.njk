@@ -1,0 +1,73 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    <div class="container py-4">
+        <h2 class="text-center txt mb-4">{{ title }}</h2>
+
+
+            <p class="mb-1">{{ description }}</p>
+
+
+        <div class="row">
+            <!-- Colonne de gauche -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h3 class="card-title txt border-bottom border-card pb-2">Objectifs principaux</h3>
+                        <p class="card-text">{{ objectifs| markdown | safe }}</p>
+
+                        <h3 class="card-title txt border-bottom border-card pb-2 mt-4">Prérequis</h3>
+                        <p class="card-text">{{ prerequis | markdown | safe}}</p>
+
+                        <h3 class="card-title txt border-bottom border-primary pb-2 mt-4">Méthode pédagogique</h3>
+
+                            <p class="mb-0">{{ methode| markdown | safe }}</p>
+
+
+                        <h3 class="card-title txt border-bottom border-primary pb-2 mt-4">Durée</h3>
+
+                            <p class="mb-0  fs-4 txt">{{ duree }}</p>
+                            <p class="mb-0  fs-4 txt">{{ tarif }}</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonne de droite -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title txt border-bottom border-card pb-2">Contenu</h3>
+
+                        <div class="accordion" id="accordionSections">
+                            {% for section in sections %}
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="heading{{ loop.index }}">
+                                        <button class="accordion-button {% if not loop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="{% if loop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ loop.index }}">
+                                            {{ section.titre }}
+                                        </button>
+                                    </h3>
+                                    <div id="collapse{{ loop.index }}" class="accordion-collapse collapse " aria-labelledby="heading{{ loop.index }}" data-bs-parent="#accordionSections">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                {% for point in section.sousPoints %}
+                                                    <li class="list-group-item">{{ point }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

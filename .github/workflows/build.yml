@@ -3,6 +3,10 @@ on:
   push:
     branches: [ main ]
 
+    # Ajout de la section permissions ici
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -25,5 +29,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }} # ou un token personnel
           branch: gh-pages
           folder: _site

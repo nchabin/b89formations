@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget('src/{css,js}');
 
     eleventyConfig.addGlobalData("site", {
-        baseURL: "https://github.com/nchabin/b89formations"
+        baseURL: "https://github.com/nchabin/b89formations/"
     });
     // Ajoute le filtre markdown
     eleventyConfig.addFilter("markdown", (content) => {

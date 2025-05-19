@@ -3,10 +3,10 @@
   target : O0
   liens :
     - arefs:
-        ref: docs/formation-info/mvp/mvp/
+        ref: docs/formation-info/MVP/mvp/
         titre: Microsoft 365, notions fondamentales (Microsoft MS MS-900)
     - arefs:
-        ref: docs/formation-info/mgh/mgh/
+        ref: docs/formation-info/MGH/mgh/
         titre: Microsoft 365 - Gestion des identités et des services (Microsoft MS-100)
 
 

@@ -76,12 +76,11 @@ Bureau 89 est soucieux de la protection des données personnelles de ses clients
 ## Destinataires
 
 - Sous-traitants pour la formation
-- Autres filiales ORSYS (si nécessaire)
 
 ## Vos droits
 
 - Accès, rectification, suppression, opposition, limitation, portabilité
-- Exercice des droits via : rgpd@orsys.fr ou courrier
+- Exercice des droits via : rgpd@BUREAU89.net ou courrier
 
 ## Transfert hors UE
 

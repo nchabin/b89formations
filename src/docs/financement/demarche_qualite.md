@@ -11,7 +11,7 @@ draft: false
 # DÉMARCHE QUALITÉ
 
 La qualité de nos formations, critère n°1 de votre satisfaction
-ORSYS se veut exemplaire dans la conception et l’organisation de ses formations.", "Outre l’excellence de nos intervenants, nous veillons à l’équilibre des programmes, aux matériels et logiciels employés et au confort de travail de nos clients. Pour ce faire, nous avons mis en place des procédures qui recouvrent toutes les étapes, depuis la conception des cours jusqu’à leur réalisation et suivi.
+BUREAU 89 se veut exemplaire dans la conception et l’organisation de ses formations.", "Outre l’excellence de nos intervenants, nous veillons à l’équilibre des programmes, aux matériels et logiciels employés et au confort de travail de nos clients. Pour ce faire, nous avons mis en place des procédures qui recouvrent toutes les étapes, depuis la conception des cours jusqu’à leur réalisation et suivi.
 
 Nous travaillons en étroite collaboration avec tous nos intervenants externes et leur proposons de se former gratuitement pour améliorer leurs connaissances et compétences et garantir ainsi la réussite de leurs animations. Nous les rencontrons régulièrement pour faire le point sur les cours qu’ils animent, pour écouter leurs retours d’expérience et leurs propositions d’amélioration des programmes et de l’offre.Participants en salle de formation
 

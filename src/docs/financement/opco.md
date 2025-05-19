@@ -28,7 +28,7 @@ d’une simplification administrative
 
 Une action collective - ActionCo - est une liste de formations conçues et déployées par l’OPCO pour inciter les entreprises adhérentes à former leurs collaborateurs sur des sujets jugés innovants et stratégiques par la branche concernée. Les adhérents bénéficient d’un financement spécifique dans la limite des fonds disponibles et de conditions financières très avantageuses (financement pouvant aller jusqu’à 100% des frais pédagogiques de la formation).
 
-Plusieurs OPCO ont retenu ORSYS pour des actions collectives. Pour en bénéficier, il suffit de répondre à deux conditions :
+Pour en bénéficier, il suffit de répondre à deux conditions :
 
 * 1 |Exercer une activité dans l’un des secteurs de la branche.
 * 2 |Être à jour du versement de ses contributions formation à l’OPCO.

@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget('src/{css,js}');
 
     eleventyConfig.addGlobalData("site", {
-        baseURL: "https://github.com/nchabin/b89formations/"
+        baseURL: "https://nchabin.github.io/b89formations/"
     });
     // Ajoute le filtre markdown
     eleventyConfig.addFilter("markdown", (content) => {
@@ -29,5 +29,7 @@ module.exports = function (eleventyConfig) {
             input: 'src',
             output: '_site',
         },
+        // Ajout du pathPrefix pour GitHub Pages
+        pathPrefix: "/b89formations/"
     };
 };

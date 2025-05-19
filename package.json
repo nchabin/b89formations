@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "npx @11ty/eleventy --pathprefix=b89formations",
     "start": "npx @11ty/eleventy --serve",
     "watch": "npx @11ty/eleventy --watch",
     "debug": "DEBUG=Eleventy* eleventy --serve"

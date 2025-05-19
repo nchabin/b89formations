@@ -28,7 +28,7 @@ tag: plan
                                     {% for lien in group.liens %}
                                         <a class="list-group-item list-group-item-action"
                                                 {% if not (lien.arefs.ref.startsWith('http://') or lien.arefs.ref.startsWith('https://')) %}
-                                                    href="{{ site.baseURL }}{{ lien.arefs.ref }}"
+                                                    href="{{ site.baseURL | url }}{{ lien.arefs.ref }}"
                                                 {% else %}
                                                     href="{{ lien.arefs.ref }}"
                                                 {% endif %}

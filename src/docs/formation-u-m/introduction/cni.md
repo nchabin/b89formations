@@ -4,9 +4,13 @@ tag: "plan"
 title: "Comprendre l'informatique, pour les non-informaticiens"
 description: "Cette formation vous permet d'acquérir les connaissances essentielles en informatique pour mieux communiquer avec les experts du domaine"
 objectifs: "- Appréhender les différents secteurs, organisations et métiers de l'informatique.
+
 - Connaître les principales infrastructures informatiques.
+
 - Identifier les différentes architectures informatiques.
+
 - Connaître les principales technologies et solutions informatiques.
+
 - Identifier les principaux risques liés à la sécurité."
 prerequis: "Aucune connaissance particulière."
 methode: "Réflexions collectives, mises en situation, démonstrations, études de cas et exercices pratiques permettant d'appliquer les concepts étudiés."

@@ -33,5 +33,5 @@
   target : p0
   liens :
     - arefs:
-        ref: docs/formation-u-m/formation_Powerpoint/powerpoint-debutant
+        ref: docs/formation-u-m/formation_Powerpoint/powerpoint-debutant/
         titre: PowerPoint Initiation

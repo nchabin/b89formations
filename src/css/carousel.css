@@ -1,0 +1,193 @@
+/* Styles du carrousel améliorés pour la responsivité */
+.solutions-carousel {
+    padding: 40px 15px; /* Ajout de padding horizontal pour éviter les bords collés sur mobile */
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Empêche le débordement horizontal */
+}
+
+.carousel-title {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Taille responsive du titre */
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 30px; /* Marge pour les boutons de navigation */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px; /* Espacement uniforme entre les cartes */
+}
+
+.carousel-slide {
+    min-width: 280px; /* Largeur minimale pour les petits écrans */
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.carousel-card {
+    background: var(--white-card);
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    border-radius: 8px; /* Coins arrondis pour un look moderne */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 180px; /* Hauteur fixe pour uniformité */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px; /* Coins arrondis pour les images */
+}
+
+.carousel-card h3 {
+    font-size: 1.2rem; /* Taille réduite pour s'adapter à tous les écrans */
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.carousel-card p {
+    color: var(--fond-card);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+/* Positionnement amélioré des boutons de navigation */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: var(--h-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Correction pour centrer verticalement */
+    opacity: 1;
+    z-index: 100;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-50%) scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+.carousel-control-prev {
+    left: 5px;
+}
+
+.carousel-control-next {
+    right: 5px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 0;
+    list-style: none;
+    position: relative; /* Changé de absolute à relative */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc; /* Gris clair pour les indicateurs inactifs */
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-indicators .active {
+    background-color: var(--primary-color);
+    transform: scale(1.2); /* Légèrement plus grand pour l'indicateur actif */
+}
+
+/* Media queries améliorées */
+@media (min-width: 1200px) {
+    .carousel-slide {
+        width: calc(33.333% - 20px); /* 3 cartes sur grand écran */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .carousel-slide {
+        width: calc(50% - 20px); /* 2 cartes sur tablette */
+    }
+    
+    .carousel-container {
+        margin: 0 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-slide {
+        width: calc(100% - 20px); /* 1 carte sur mobile */
+    }
+    
+    .carousel-container {
+        margin: 0 15px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .carousel-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-card img {
+        height: 160px;
+    }
+}
+
+/* Amélioration pour l'accessibilité */
+.carousel-control-prev:focus,
+.carousel-control-next:focus,
+.carousel-indicators button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Animation pour la transition des slides */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.carousel-slide {
+    animation: fadeIn 0.5s ease;
+}

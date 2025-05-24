@@ -125,7 +125,7 @@ header{
 }
 /* pied */
 footer {
-    background-color: var(--primary-color) !important;
+    background-color: var(--linkd) !important;
 }
 footer a:hover {
     opacity: 0.8;

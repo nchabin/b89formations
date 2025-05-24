@@ -27,10 +27,14 @@
     color: var(--white);
 }
 header{
-    background-color: var(--primary-color);
+    background-color: var(--linkd);
 }
 .nav-main {
     border-bottom: 4px solid var(--h-color);
+}
+.linkd {
+    color: var(--linkd);
+    text-decoration: none;
 }
 
 .nav-item {
@@ -92,6 +96,32 @@ header{
     max-width: 1200px;
    /* margin: 0 auto;*/
     padding: 0 15px;
+}
+.grandtitre {
+    color:  var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.link {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.link:hover {
+    color: var(--primary-color);
+    text-decoration: none; /* Supprime le soulignement au survol */
+    font-weight: bold; /* Optionnel: ajoute du gras au lieu du soulignement */
+}
+.btn-outline-success a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: var(--white); /* Utilise la couleur success de Bootstrap */
+}
+
+.btn-outline-success a:hover {
+    color: var(--white); /* Assure que la couleur reste identique au survol */
 }
 /* pied */
 footer {

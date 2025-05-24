@@ -41,7 +41,31 @@
     flex-direction: column;
     transition: all 0.3s ease;
 }
+/* Style pour les liens des formations sans modifier la présentation */
+.formation-link {
+    color: inherit; /* Hérite la couleur du texte parent */
+    text-decoration: none; /* Supprime le soulignement */
+    display: block; /* Permet au lien de prendre toute la surface de la carte */
+}
 
+.formation-link:hover {
+    color: inherit; /* Conserve la couleur au survol */
+    text-decoration: none; /* Pas de soulignement au survol */
+}
+
+/* Effet subtle au survol pour indiquer que c'est cliquable */
+.carousel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* S'assurer que le survol n'affecte pas la lisibilité */
+.carousel-card {
+    transition: all 0.3s ease;
+    height: 100%;
+    cursor: pointer; /* Indique que la carte est cliquable */
+}
 .carousel-card img {
     width: 100%;
     height: 180px; /* Hauteur fixe pour uniformité */

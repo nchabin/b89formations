@@ -27,8 +27,7 @@
 }
 
 .carousel-slide {
-    min-width: 280px; /* Largeur minimale pour les petits écrans */
-    flex: 1;
+    flex: 0 0 auto; /* Empêche les slides de rétrécir ou grandir */
     box-sizing: border-box;
 }
 
@@ -135,13 +134,13 @@
 /* Media queries améliorées */
 @media (min-width: 1200px) {
     .carousel-slide {
-        width: calc(33.333% - 20px); /* 3 cartes sur grand écran */
+        width: calc(33.333% - 15px); /* 3 cartes sur grand écran */
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .carousel-slide {
-        width: calc(50% - 20px); /* 2 cartes sur tablette */
+        width: calc(50% - 10px); /* 2 cartes sur tablette */
     }
     
     .carousel-container {
@@ -151,11 +150,11 @@
 
 @media (max-width: 767px) {
     .carousel-slide {
-        width: calc(100% - 20px); /* 1 carte sur mobile */
+        width: calc(100% - 40px); /* 1 carte sur mobile avec marge pour les boutons */
     }
     
     .carousel-container {
-        margin: 0 15px;
+        margin: 0 25px; /* Plus de marge pour les boutons sur mobile */
     }
     
     .carousel-control-prev,
@@ -165,12 +164,24 @@
         font-size: 16px;
     }
     
+    .carousel-control-prev {
+        left: -5px;
+    }
+    
+    .carousel-control-next {
+        right: -5px;
+    }
+    
     .carousel-card h3 {
         font-size: 1.1rem;
     }
     
     .carousel-card img {
         height: 160px;
+    }
+    
+    .solutions-carousel {
+        padding: 20px 10px; /* Moins de padding sur mobile */
     }
 }
 

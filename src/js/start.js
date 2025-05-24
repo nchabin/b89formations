@@ -53,9 +53,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Obtenir la largeur d'un slide
     function getSlideWidth() {
-        // On calcule dynamiquement la largeur du slide
-        const trackWidth = track.offsetWidth;
-        return trackWidth / slidesToShow;
+        if (slides.length === 0) return 0;
+        
+        // Obtenir la largeur du conteneur
+        const containerWidth = track.parentElement.offsetWidth;
+        
+        // Calculer la largeur basée sur le nombre de slides visibles
+        const gap = 20; // Espacement entre les slides
+        const slideWidth = (containerWidth - (gap * (slidesToShow - 1))) / slidesToShow;
+        
+        return slideWidth;
     }
     
     // Gérer le redimensionnement de fenêtre
@@ -87,8 +94,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Mise à jour de l'affichage du carrousel
     function updateCarousel() {
+        // Ajuster la largeur de chaque slide
+        slides.forEach(slide => {
+            slide.style.width = `${slideWidth}px`;
+        });
+        
         // Transformer le track pour déplacer les slides
-        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        const gap = 20;
+        const moveDistance = currentIndex * (slideWidth + gap);
+        track.style.transform = `translateX(-${moveDistance}px)`;
         
         // Mettre à jour les indicateurs
         updateIndicators();

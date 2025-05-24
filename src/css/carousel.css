@@ -1,10 +1,10 @@
 /* Styles du carrousel améliorés pour la responsivité */
 .solutions-carousel {
     padding: 40px 15px; /* Ajout de padding horizontal pour éviter les bords collés sur mobile */
-    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     overflow: hidden; /* Empêche le débordement horizontal */
+    width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
 }
 
 .carousel-title {
@@ -139,6 +139,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+    .solutions-carousel {
+        max-width: 1200px;
+    }
     .carousel-slide {
         width: calc(50% - 10px); /* 2 cartes sur tablette */
     }
@@ -149,6 +152,11 @@
 }
 
 @media (max-width: 767px) {
+    .solutions-carousel {
+        max-width: 400px;
+        padding: 20px 10px;
+        margin: 0;
+    }
     .carousel-slide {
         width: calc(100% - 40px); /* 1 carte sur mobile avec marge pour les boutons */
     }

@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addGlobalData("site", {
         baseURL: "https://nchabin.github.io/b89formations/"
     });
+    //http://localhost:8080/b89formations/
     // Ajoute le filtre markdown
     eleventyConfig.addFilter("markdown", (content) => {
         if (!content) return "";
